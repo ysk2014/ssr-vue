@@ -1,8 +1,3 @@
 {
-    "prompts": {
-        "name": {
-            "type": "input",
-            "message": "项目名称："
-        }
-    }
+    "prompts": [{ "name": "name", "type": "input", "message": "项目名称：" }]
 }
