@@ -1,6 +1,6 @@
 {
-  "name": "feflow-template-ssr-vue",
-  "version": "1.0.0",
-  "license": "MIT",
-  "description": "VUE SSR with webpack & flow-build"
+    "name": "flow-template-ssr-vue",
+    "version": "1.0.0",
+    "license": "MIT",
+    "description": "VUE SSR with webpack & flow-build"
 }

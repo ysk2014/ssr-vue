@@ -10,11 +10,6 @@ module.exports = {
     // 	}
     // },
 
-    build: {
-        assetsSubDirectory: "st",
-        publicPath: "//static1.qianqian.com/web/"
-    },
-
     js: {
         babel: {
             presets: [
@@ -34,10 +29,6 @@ module.exports = {
         }
     },
 
-    alias: {
-        musicApi: "@local/flow-axios/dist/ssr"
-    },
-
     // html config
     html: {
         template: {
@@ -46,7 +37,6 @@ module.exports = {
         }
     },
 
-    // vue/react/multiple/spa/ssr
     mode: "ssr",
 
     hooks: [

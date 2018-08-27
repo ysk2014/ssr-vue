@@ -27,14 +27,11 @@ app.use(compression());
 // static
 let vueSSROptions;
 if (env !== "development") {
-    // if(env === 'test') {
-    //     app.use('/st', serve('./dist/st', true))
-    // }
     app.use("/st", serve("./dist/st", true));
     vueSSROptions = {
         template: resolve("./dist/index.ssr.html"),
         context: {
-            title: "百度音乐" // default title
+            title: "demo" // default title
         },
         cache: LRU({
             max: 10000,
@@ -45,7 +42,7 @@ if (env !== "development") {
     vueSSROptions = {
         template: resolve("./src/index.ssr.html"),
         context: {
-            title: "百度音乐" // default title
+            title: "demo" // default title
         }
     };
     const flowConfig = require("./flow.config.js");
