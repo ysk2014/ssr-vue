@@ -1,0 +1,32 @@
+{
+    "root": true,
+    "parser": "babel-eslint",
+    "parserOptions": {
+        "ecmaFeatures": {
+            "experimentalObjectRestSpread": true
+        },
+        "ecmaVersion": 6,
+        "sourceType": "module"
+    },
+    "globals": {
+        "process": true
+    },
+    "env": {
+        "browser": true,
+        "commonjs": true,
+        "es6": true,
+        "node": true
+    },
+    "extends": "eslint:recommended",
+    "plugins": ["vue", "html"],
+    "rules": {
+        "indent": ["error", 4],
+        "semi": 0,
+        "quotes": ["error", "double"],
+        "no-useless-escape": 0,
+        "no-constant-condition": 0,
+        "vue/jsx-uses-vars": 2,
+        "no-console": 0,
+        "no-unused-vars": 0
+    }
+}
