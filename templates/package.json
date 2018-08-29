@@ -18,7 +18,7 @@
         "express": "^4.16.2",
         "flow-proxy-middleware": "^0.1.1",
         "flow-vue-ssr-hook": "^1.2.7",
-        "flow-vue-ssr-middleware": "^0.2.9",
+        "flow-vue-ssr-middleware": "^0.3.0",
         "lru-cache": "^4.1.2",
         "vue": "^2.5.3",
         "vue-router": "^3.0.1",

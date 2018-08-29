@@ -51,13 +51,19 @@ if (env !== "development") {
     }
 }
 
-let ssMid = VueSSRMiddleware(vueSSROptions);
-app.use(ssMid);
+VueSSRMiddleware(vueSSROptions).then(({ devMiddleware, hotMiddleware, middleware, openBrowser }) => {
+    devMiddleware && app.use(devMiddleware);
+    hotMiddleware && app.use(hotMiddleware);
 
-app.listen(port, "0.0.0.0", () => {
-    console.log(`server started at ${host}:${port}`);
-    ssMid.openBrowser && ssMid.openBrowser(host, port);
-});
+    app.use(middleware);
+
+    app.listen(port, "0.0.0.0", () => {
+        console.log(`server started at ${host}:${port}`);
+        openBrowser && openBrowser(host, port);
+    });
+}); 
+
+
 
 process.on("uncaughtException", err => {
     console.error("uncaught exception: ", err);
