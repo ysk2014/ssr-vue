@@ -2,7 +2,7 @@
  * vuex module
  */
 // fake data api
-import next from "@/api/next";
+import next from "./api";
 
 // initial state
 const state = {
