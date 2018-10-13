@@ -10,25 +10,6 @@ module.exports = {
     // 	}
     // },
 
-    js: {
-        babel: {
-            presets: [
-                [
-                    "env",
-                    {
-                        modules: false,
-                        targets: {
-                            browsers: ["> 1%", "last 2 versions", "not ie <= 8"]
-                        },
-                        useBuiltIns: true
-                    }
-                ],
-                "stage-2"
-            ],
-            plugins: ["transform-decorators-legacy"]
-        }
-    },
-
     // html config
     html: {
         template: {

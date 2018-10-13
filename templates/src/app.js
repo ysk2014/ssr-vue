@@ -1,7 +1,9 @@
 /**
  * 客户端(entry-client)、服务端(entry-server)公用文件
  */
+<% if (!webpack) {%>
 import "babel-polyfill";
+<% } %>
 
 import Vue from "vue";
 import App from "./App.vue";

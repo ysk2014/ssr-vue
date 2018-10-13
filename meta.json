@@ -1,3 +1,15 @@
 {
-    "prompts": [{ "name": "name", "type": "input", "message": "项目名称：" }]
+    "prompts": [
+        { 
+            "name": "name", 
+            "type": "input", 
+            "message": "项目名称："
+        },
+        {
+            "name": "webpack",
+            "type": "confirm",
+            "message": "是否webpack4版本打包?",
+            "default": true
+        }
+    ]
 }
