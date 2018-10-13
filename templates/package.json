@@ -17,7 +17,7 @@
         "compression": "^1.7.1",
         "express": "^4.16.2",
         "flow-proxy-middleware": "^0.1.1",<% if(webpack) {%>
-        "flow-vue-ssr-hook": "^2.0.0",<%}else{%>
+        "flow-vue-ssr-hook": "^2.0.1",<%}else{%>
         "flow-vue-ssr-hook": "^1.2.7",<%}%>
         "flow-vue-ssr-middleware": "^0.3.2",
         "lru-cache": "^4.1.2",
