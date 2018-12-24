@@ -1,7 +1,7 @@
 /**
  * 客户端(entry-client)、服务端(entry-server)公用文件
  */
-<% if (!webpack) {%>
+<% if (!meta.webpack) {%>
 import "babel-polyfill";
 <% } %>
 
