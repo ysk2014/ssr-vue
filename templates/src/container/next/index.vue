@@ -6,7 +6,6 @@
         <ul>
             <li v-for="(item, index) in items" :key="index"> </li>
         </ul>
-        <div v-if="error"></div>
     </div>
 </template>
 
